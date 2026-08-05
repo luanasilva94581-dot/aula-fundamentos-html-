@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universo dos Desenhos</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color:#000;
+    color:white;
+}
+
+/* Cabeçalho */
+header{
+    background:#111;
+    padding:30px;
+    text-align:center;
+    border-bottom:4px solid #00bfff;
+}
+
+header h1{
+    font-size:50px;
+    color:#00bfff;
+    text-shadow:3px 3px 8px #ffffff50;
+    letter-spacing:3px;
+}
+
+header p{
+    margin-top:10px;
+    color:#dcdcdc;
+    font-size:20px;
+}
+
+/* Títulos */
+h2{
+    margin:30px;
+    color:#ffd700;
+    font-size:32px;
+    border-left:8px solid #00bfff;
+    padding-left:15px;
+}
+
+/* Imagem principal */
+.img-destaque{
+    width:95%;
+    height:450px;
+    display:block;
+    margin:20px auto;
+    object-fit:cover;
+    border-radius:20px;
+    border:5px solid #00bfff;
+    box-shadow:0 0 25px #00bfff;
+}
+
+/* Galeria */
+.div-imagens{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.img-pequena{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    border:3px solid white;
+    transition:0.4s;
+    box-shadow:0 0 15px rgba(255,255,255,.2);
+}
+
+.img-pequena:hover{
+    transform:scale(1.08);
+    border-color:#ffd700;
+    box-shadow:0 0 25px #ffd700;
+}
+
+/* Nome dos desenhos */
+.card{
+    text-align:center;
+}
+
+.card p{
+    margin-top:10px;
+    font-size:22px;
+    font-weight:bold;
+    color:#fff;
+}
+
+/* Rodapé */
+footer{
+    margin-top:40px;
+    background:#111;
+    text-align:center;
+    padding:20px;
+    color:#aaa;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🎬 UNIVERSO DOS DESENHOS</h1>
+    <p>Os personagens mais famosos em um só lugar!</p>
+</header>
+
+<h2>🌟 Destaque da Semana</h2>
+
+<img class="img-destaque" src="f5.jpg" alt="Gru">
+
+<h2>🎨 Personagens em Destaque</h2>
+
+<div class="div-imagens">
+
+    <div class="card">
+        <img class="img-pequena" src="f1.jpg" alt="Araras">
+        <p>🦜 Rio</p>
+    </div>
+
+    <div class="card">
+        <img class="img-pequena" src="f2.jpg" alt="Homem-Aranha">
+        <p>🕷️ Homem-Aranha</p>
+    </div>
+
+    <div class="card">
+        <img class="img-pequena" src="f3.jpg" alt="Banguela">
+        <p>🐉 Como Treinar o Seu Dragão</p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 - Universo dos Desenhos
+</footer>
+
+</body>
+</html>
