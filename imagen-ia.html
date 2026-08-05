@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right, #87CEEB, #B0E0E6);
+            padding: 30px;
+        }
+
+        h1{
+            text-align: center;
+            color: navy;
+            margin-bottom: 30px;
+            font-size: 40px;
+        }
+
+        .img-destaque{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 6px solid white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .div-imagens{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .img-pequena{
+            width: 33%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 5px solid white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        .img-pequena:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0,0,0,0.4);
+        }
+
+        footer{
+            margin-top: 40px;
+            text-align: center;
+            color: navy;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🌟 Minha Galeria de Fotos 🌟</h1>
+
+    <img class="img-destaque" src="f5.jpg" alt="Imagem Principal">
+
+    <div class="div-imagens">
+        <img class="img-pequena" src="f1.jpg" alt="Araras">
+        <img class="img-pequena" src="f2.jpg" alt="Homem-Aranha">
+        <img class="img-pequena" src="f3.jpg" alt="Banguela">
+    </div>
+
+    <footer>
+        Desenvolvido por Luana 💙
+    </footer>
+
+</body>
+</html>
